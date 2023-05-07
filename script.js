@@ -8,6 +8,8 @@ let timerStarted = false
 let startTime
 let timerInterval
 
+alert('test')
+
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
     const arrayValue = quoteInputElement.value.split('')

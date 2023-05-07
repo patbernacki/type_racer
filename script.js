@@ -8,8 +8,6 @@ let timerStarted = false
 let startTime
 let timerInterval
 
-alert('test')
-
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
     const arrayValue = quoteInputElement.value.split('')
@@ -52,6 +50,7 @@ function getRandomQuote() {
 }
 
 async function renderNewQuote() {
+    alert('test')
     const quote = await getRandomQuote()
     quoteDisplayElement.innerHTML = ''
     quote.split('').forEach(character => {

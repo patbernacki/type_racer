@@ -44,6 +44,7 @@ resetElement.addEventListener('click', () => {
 
 
 function getRandomQuote() {
+    alert('TEST2')
     return fetch(RANDOM_QUOTE_API_URL)
         .then(response => response.json())
         .then(data => data.content)
@@ -52,6 +53,7 @@ function getRandomQuote() {
 async function renderNewQuote() {
     alert('TEST')
     const quote = await getRandomQuote()
+    alert(quote)
     quoteDisplayElement.innerHTML = ''
     quote.split('').forEach(character => {
         const characterSpan = document.createElement('span')

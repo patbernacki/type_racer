@@ -50,6 +50,7 @@ function getRandomQuote() {
 }
 
 async function renderNewQuote() {
+    alert('TEST')
     const quote = await getRandomQuote()
     quoteDisplayElement.innerHTML = ''
     quote.split('').forEach(character => {

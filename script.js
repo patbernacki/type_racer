@@ -44,7 +44,6 @@ resetElement.addEventListener('click', () => {
 
 
 function getRandomQuote() {
-    alert('TEST2')
     return fetch(RANDOM_QUOTE_API_URL)
         .then(response => response.json())
         .then(data => data.content)

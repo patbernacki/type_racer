@@ -51,7 +51,6 @@ function getRandomQuote() {
 }
 
 async function renderNewQuote() {
-    alert('TEST')
     const quote = await getRandomQuote()
     alert(quote)
     quoteDisplayElement.innerHTML = ''
